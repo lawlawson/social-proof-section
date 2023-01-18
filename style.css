@@ -13,6 +13,8 @@
   --fs-900: 2rem;
 
   --br: .5rem;
+
+  --spacer: 2rem;
 }
 
 .container {
@@ -49,6 +51,9 @@ h1 {
   font-weight: 800;
   padding: .5rem ;
   border-radius: var(--br);
+  max-width: 25rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .ratings li::before {
@@ -71,4 +76,40 @@ h1 {
   color: var(--clr-neutral-200);
   text-align: left;
   border-radius: var(--br);
+  padding: 2rem;
+  padding: var(--spacer);
+  max-width: 25rem;
+  margin: 0 auto;
+}
+
+/* .split {
+    display: flex;
+} */
+
+img {
+  width: 3rem;
+  border-radius: 50%;
+  margin-right: var(--spacer);
+}
+
+.name {
+  font-weight: 800;
+}
+
+a-center {
+  align-items: center;
+}
+
+.status {
+  color: var(--clr-primary-300);
+}
+
+.quote {
+  margin-top: var(--spacer);
+}
+
+@media(min-width: 50em) {
+  .split{
+    display: flex;
+  }
 }
