@@ -82,9 +82,11 @@ h1 {
   margin: 0 auto;
 }
 
-/* .split {
+.split {
     display: flex;
-} */
+    gap: 1em;
+    flex-direction: column;
+} 
 
 img {
   width: 3rem;
@@ -108,8 +110,9 @@ a-center {
   margin-top: var(--spacer);
 }
 
-@media(min-width: 50em) {
-  .split{
-    display: flex;
+@media (min-width: 50em) {
+
+  .split {
+    flex-direction: row;
   }
 }
