@@ -35,8 +35,8 @@ h1 {
   color: var(--clr-primary-700);
   line-height: 1;
   max-width: 12ch; /* For character size */
-  margin-left: auto;
-  margin-right: auto;
+  /* margin-left: auto;
+  margin-right: auto; */
   margin-bottom: 1rem;
   font-weight: 800;
 }
@@ -76,7 +76,6 @@ blockquote {
   color: var(--clr-neutral-200);
   text-align: left;
   border-radius: var(--br);
-  padding: 2rem;
   padding: var(--spacer);
   max-width: 25rem;
   margin: 0 auto;
@@ -143,7 +142,7 @@ main {
 
 @media (max-width: 50em) {
 
-  main {
+  h1 {
     margin-left: auto;
     margin-right: auto;
   }
