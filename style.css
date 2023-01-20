@@ -138,6 +138,11 @@ main {
   .quotes {
     grid-column: 1 / -1;
   }
+
+  li::before {
+    display: flex;
+    margin: 0;
+  }
 }
 
 @media (max-width: 50em) {
