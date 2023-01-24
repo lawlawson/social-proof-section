@@ -28,6 +28,17 @@ body {
   font-size: var(--fs-400);
   padding-top: 5rem;
   text-align: center;
+  background-image: url(./images/bg-pattern-top-desktop.svg),
+  url(./images/bg-pattern-bottom-desktop.svg);
+  background-position: top left, bottom right;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: max(50%, 400px); 
+}
+
+main {
+  display: grid;
+  gap: 3rem 1rem;
 }
 
 h1 {
@@ -35,7 +46,7 @@ h1 {
   color: var(--clr-primary-700);
   line-height: 1;
   max-width: 12ch; /* For character size */
-  margin-bottom: 1rem;
+  margin-bottom: 0.25em;
   font-weight: 800;
 }
 
@@ -89,15 +100,24 @@ blockquote {
 img {
   width: 3rem;
   border-radius: 50%;
-  margin-right: var(--spacer);
 }
 
 .name {
   font-weight: 800;
 }
 
-a-center {
+.a-center {
   align-items: center;
+}
+
+.buyer-headshot {
+  position: relative;
+  display: inline-block;
+}
+
+.buyer-info {
+  position: absolute;
+  margin: 0 4.5rem;
 }
 
 .status {
@@ -108,11 +128,7 @@ a-center {
   margin-top: var(--spacer);
 }
 
-main {
-  display: grid;
-  gap: 3rem 1rem;
-}
-
+/* Media Queries */
 
 @media (min-width: 50em) {
 
@@ -133,6 +149,11 @@ main {
   .ratings {
     grid-column: 2 / 3;
     align-self: center;
+  }
+
+  img {
+    width: 3rem;
+    border-radius: 50%;
   }
 
   .quotes {
@@ -162,6 +183,8 @@ main {
   .ratings li:last-of-type {
    transform: translateX(2rem);
   }
+
+
 }
 
 @media (max-width: 50em) {
@@ -169,5 +192,7 @@ main {
   h1 {
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 1em;
   }
+
 }
