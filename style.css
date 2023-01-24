@@ -118,6 +118,7 @@ main {
 
   .split {
     flex-direction: row;
+    padding: 0;
   }
 
   main {
